@@ -1,0 +1,143 @@
+/* Sidebar + page layout for Flood Guard AI */
+.fg-layout {
+  display: flex;
+  align-items: flex-start;
+  min-height: calc(100vh - 82px);
+}
+
+.fg-sidebar {
+  position: sticky;
+  top: 0;
+  flex: 0 0 260px;
+  width: 260px;
+  height: 100vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 18px 12px 24px;
+  background: #0f2a3d;
+  color: #e2e8f0;
+  z-index: 500;
+}
+
+.fg-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 8px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 8px;
+}
+
+.fg-logo {
+  width: 42px;
+  height: 42px;
+  flex: none;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  color: #ffffff;
+  background: #2b6c8f;
+  border: 3px solid #dbe9f2;
+}
+
+.fg-brand-name {
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.fg-brand-sub {
+  font-size: 13px;
+  color: #a9bfcf;
+}
+
+.fg-group {
+  margin: 18px 10px 6px;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8aa4b8;
+}
+
+.fg-side-select {
+  width: 100%;
+  padding: 9px 10px;
+  border-radius: 8px;
+  border: 1px solid #2c4a60;
+  background: #16364d;
+  color: #f8fafc;
+  font-size: 14px;
+}
+
+.fg-nav {
+  display: block;
+  width: 100%;
+  margin: 2px 0;
+  padding: 11px 14px;
+  border: 0;
+  border-left: 4px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  color: #dce7ef;
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.fg-nav:hover {
+  background: #173a52;
+}
+
+.fg-nav.active {
+  background: #1f4a66;
+  border-left-color: #f0a91c;
+  color: #ffffff;
+}
+
+.fg-main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.fg-page-title {
+  margin-bottom: 18px;
+}
+
+.fg-page-title h2 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.fg-page-title p {
+  margin: 6px 0 0;
+  color: #64748b;
+}
+
+@media (max-width: 900px) {
+  .fg-layout {
+    flex-direction: column;
+  }
+
+  .fg-sidebar {
+    position: static;
+    width: 100%;
+    flex: none;
+    height: auto;
+  }
+
+  .fg-sidebar nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .fg-nav {
+    width: auto;
+    margin: 0;
+  }
+}
+
+/* Sidebar already shows the brand: hide the duplicate one in the top bar */
+.topbar .brand { display: none; }
+.topbar { justify-content: flex-end; }

@@ -1,0 +1,5 @@
+model,roc_auc,pr_auc,lift,precision,recall,f1,brier,event_hit_rate,test_events,alerts_per_district_year
+Rainfall rule (baseline),0.668,0.0252,1.9,0.032,0.08,0.046,0.0197,0.318,129,12.0
+Logistic Regression,0.782,0.0498,3.7,0.072,0.168,0.101,0.1564,0.364,129,11.3
+Random Forest,0.715,0.0257,1.9,0.017,0.053,0.026,0.081,0.124,129,15.2
+XGBoost,0.706,0.0251,1.9,0.015,0.041,0.022,0.0998,0.132,129,13.1

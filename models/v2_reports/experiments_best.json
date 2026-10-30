@@ -1,0 +1,10 @@
+{
+  "variant": "C: start today..+7 days",
+  "model": "Logistic Regression",
+  "roc_auc": 0.782,
+  "pr_auc": 0.0498,
+  "lift": 3.7,
+  "event_hit_rate": 0.341,
+  "test_events": 129,
+  "positive_rate": 0.0135
+}

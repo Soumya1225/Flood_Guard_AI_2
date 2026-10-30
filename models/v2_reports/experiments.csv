@@ -1,0 +1,13 @@
+variant,model,roc_auc,pr_auc,lift,event_hit_rate,test_events,positive_rate
+A: start in next 1-3 days,Rainfall rule (3-day rain),0.622,0.0071,1.4,0.07,129,0.0051
+A: start in next 1-3 days,Logistic Regression,0.784,0.0175,3.4,0.194,129,0.0051
+A: start in next 1-3 days,Random Forest,0.715,0.0104,2.0,0.054,129,0.0051
+A: start in next 1-3 days,XGBoost,0.649,0.0085,1.7,0.07,129,0.0051
+B: start today..+3 days,Rainfall rule (3-day rain),0.643,0.0109,1.6,0.124,129,0.0068
+B: start today..+3 days,Logistic Regression,0.785,0.0228,3.4,0.264,129,0.0068
+B: start today..+3 days,Random Forest,0.73,0.0145,2.1,0.078,129,0.0068
+B: start today..+3 days,XGBoost,0.668,0.0119,1.8,0.101,129,0.0068
+C: start today..+7 days,Rainfall rule (3-day rain),0.668,0.0252,1.9,0.256,129,0.0135
+C: start today..+7 days,Logistic Regression,0.782,0.0498,3.7,0.341,129,0.0135
+C: start today..+7 days,Random Forest,0.715,0.0257,1.9,0.101,129,0.0135
+C: start today..+7 days,XGBoost,0.706,0.0251,1.9,0.109,129,0.0135
