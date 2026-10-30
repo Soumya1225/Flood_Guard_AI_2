@@ -1,0 +1,103 @@
+# ==================================================
+# Python
+# ==================================================
+
+.venv/
+.venv-1/
+__pycache__/
+*.py[cod]
+*.pyo
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python build
+build/
+*.egg-info/
+
+
+# ==================================================
+# React / Node
+# ==================================================
+
+frontend/node_modules/
+frontend/dist/
+
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+
+# ==================================================
+# Environment / Secrets
+# ==================================================
+
+.env
+.env.*
+!.env.example
+
+
+# ==================================================
+# IDE
+# ==================================================
+
+.vscode/
+.idea/
+
+
+# ==================================================
+# OS
+# ==================================================
+
+.DS_Store
+Thumbs.db
+
+
+# ==================================================
+# Large / Raw Dataset Files
+# ==================================================
+
+data/
+Drainage/
+Historical_Flood/
+
+gadm41_IND.gpkg
+
+*.gpkg-wal
+*.gpkg-shm
+
+
+# ==================================================
+# Raw / Temporary Download Files
+# ==================================================
+
+*.zip
+
+0d5e96c1-aeec-4382-ab3b-53ee997b84ac.csv
+38be6d8d-08c1-4649-aee4-e8e65977abd8.csv
+578e35aa-7044-4a53-a941-8b5b13906372.csv
+6c0eb56d-08f4-478b-83a1-3e331db67afa.csv
+7b11c75a-a714-461d-b13e-81cbd50df6b7.csv
+b20197ea-f9d8-4791-974f-1b18fd0a6a68.csv
+c7423011-dac6-4e63-8ffe-965a24ae9ddf.csv
+c8e91c3f-9841-4e47-b0d8-5ec1bd32fab7.csv
+
+
+# ==================================================
+# Generated Local Data
+# ==================================================
+
+processed_data/
+forecasting/*.csv
+gis/*.csv
+gis/*.gpkg
+what_if/*.csv
+# Flood Guard AI local backups and temporary files
+*_before_*
+*_backup*
+*.backup
+*.backup_*
+*_project_backups/
+App_current_backup.txt
+Claude Setup.exe

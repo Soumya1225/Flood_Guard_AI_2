@@ -1,0 +1,11 @@
+pandas==3.0.5
+numpy==2.5.3
+scikit-learn==1.9.1
+matplotlib==3.11.2
+geopandas==1.1.4
+rasterio==1.5.1
+requests==2.34.2
+xgboost==3.4.1
+nicegui==3.16.0
+fastapi==0.141.1
+uvicorn==0.53.0
